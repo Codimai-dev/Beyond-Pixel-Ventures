@@ -183,7 +183,7 @@ body {
      
 }
 .page-header-services {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/service-hero.jpg');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/service-hero.jpg'); */
 }
 
 .page-header-contact {
@@ -798,7 +798,7 @@ body {
       height: 100vh;
       width: 100%;
       overflow: hidden;
-      background-color: #ffffff; /* light pink */
+      background-color: #000000; /* light pink */
     }
 
     /* Liquid Animated Gradient */
@@ -810,9 +810,9 @@ body {
       height: 150%;
       z-index: 1;
       background: 
-        radial-gradient(circle at var(--x1, 30%) var(--y1, 30%), #ff0000 0%, transparent 40%),
-        radial-gradient(circle at var(--x2, 70%) var(--y2, 40%), #ff9090 0%, transparent 40%),
-        radial-gradient(circle at var(--x3, 50%) var(--y3, 70%), #fdfdfd 0%, transparent 40%);
+        radial-gradient(circle at var(--x1, 30%) var(--y1, 30%), #fffc4817 0%, transparent 40%),
+        radial-gradient(circle at var(--x2, 70%) var(--y2, 40%), #90bcff25 0%, transparent 40%);
+        /* radial-gradient(circle at var(--x3, 50%) var(--y3, 70%), #fdfdfd52 0%, transparent 40%); */
       background-blend-mode: screen;
       filter: blur(100px);
       animation: animateBlobs 2s ease-in-out infinite alternate;
@@ -872,15 +872,19 @@ body {
     }
 
     .hero-content h1 {
-      font-size: 3rem;
+      font-size: 5rem;
       margin: 0;
     }
 
     .hero-content p {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-top: 1rem;
     }
-  
+  @media (max-width:400px){
+    .hero-content h1{
+      font-size: 3rem;
+    }
+  }
 /* ✅ Responsive Fix for Mobile Devices 
 @media (max-width: 768px) {
   .hero-text-box {
@@ -1052,3 +1056,9 @@ body {
       .container{ padding:16px; }
       h1{ font-size:1.25rem; }
     }
+    .hero{
+      height: 300px;
+      background-color: black;
+      position: relative;
+    }
+    

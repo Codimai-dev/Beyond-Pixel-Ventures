@@ -1,0 +1,113 @@
+    .founder-card {
+      max-width: 950px;
+      margin: 0 auto;
+      background: #ffffff;
+      color: #000000;
+      border-radius: 18px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: stretch;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .founder-avatar {
+      width: 140px;
+      height: 200px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255, 63, 63, 0.12), rgba(255, 63, 63, 0.04));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #ff3f3f;
+      font-size: 34px;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 63, 63, 0.15);
+    }
+
+    .founder-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .founder-name {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+    }
+
+    .founder-role {
+      font-size: 18px;
+      color: #6b6b6b;
+      margin: 0 0 20px 0;
+    }
+
+    .founder-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .founder-list li {
+      margin: 14px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .founder-list li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ff3f3f;
+      box-shadow: 0 0 0 5px rgba(255, 63, 63, 0.08);
+    }
+
+    .key-takeaway {
+      margin-top: 22px;
+      background: linear-gradient(90deg, rgba(255, 63, 63, 0.06), rgba(255, 63, 63, 0.02));
+      padding: 16px 18px;
+      border-radius: 12px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      border: 1px solid rgba(255, 63, 63, 0.08);
+    }
+
+    .takeaway-bullet {
+      font-weight: 700;
+      color: #ff3f3f;
+      font-size: 26px;
+      flex: 0 0 40px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .takeaway-text {
+      font-size: 17px;
+      color: #000000;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      .founder-card {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .founder-avatar {
+        width: 100%;
+        height: 120px;
+        font-size: 28px;
+      }
+    }
