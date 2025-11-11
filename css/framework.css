@@ -1,0 +1,92 @@
+/* === Framework Section === */
+.framework-section {
+  background: var(--background);
+  padding: 6rem 0;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header h5 {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.section-header h1 {
+  color: var(--text-dark);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* ---- Grid ---- */
+.framework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+/* ---- Card ---- */
+.framework-card {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.8rem;
+}
+
+.framework-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.framework-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Text ---- */
+.framework-card h4 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.framework-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.framework-card li {
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.framework-card strong {
+  color: var(--text-dark);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .section-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .framework-card {
+    padding: 1.5rem;
+  }
+
+  .framework-img {
+    height: 150px;
+  }
+}
