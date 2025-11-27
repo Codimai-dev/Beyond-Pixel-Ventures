@@ -496,6 +496,7 @@ a:hover {
   letter-spacing: -1px;
   line-height: 1.1;
   position: relative;
+  display: inline-block;
 }
 .hero-content h1::after{
   content: '';
