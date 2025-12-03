@@ -17,7 +17,7 @@ menuToggle.addEventListener("click", () => {
   }
 });
 
-// Optional: Close the menu when a link is clicked (mobile UX)
+// Close the menu when a link is clicked (mobile UX)
 document.querySelectorAll(".nav-link").forEach(link => {
   link.addEventListener("click", () => {
     navbarMenu.classList.remove("active");
@@ -29,3 +29,32 @@ document.querySelectorAll(".nav-link").forEach(link => {
     }
   });
 });
+
+// Highlight active section on scroll
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+function highlightActiveSection() {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach(section => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 100; // Offset for navbar height
+    const sectionId = section.getAttribute("id");
+    
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${sectionId}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+}
+
+// Listen for scroll events
+window.addEventListener("scroll", highlightActiveSection);
+
+// Run on page load
+document.addEventListener("DOMContentLoaded", highlightActiveSection);

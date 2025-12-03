@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -15,6 +15,14 @@
 />
         <link href="css/style.css" rel="stylesheet">
        <link rel="stylesheet" href="./css/index.css">
+       <link rel="stylesheet" href="./css/about.css">
+       <link rel="stylesheet" href="./css/framework.css">
+       <link rel="stylesheet" href="./css/usecase.css">
+       <style>
+         html {
+           scroll-behavior: smooth;
+         }
+       </style>
     </head>
 
     <body>
@@ -30,28 +38,28 @@
     </button>
 
     <nav class="navbar-menu" id="menu">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="framework.html" class="nav-link">Framework</a>
-      <!-- <a href="team.html" class="nav-link">Team</a> -->
-      <a href="usecase.html" class="nav-link">Usecase & Stories</a>
-      <!-- <a href="tools.html" class="nav-link">Tools</a> -->
-      <!-- <a href="contact.html" class="nav-link">Contact</a> -->
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#framework" class="nav-link">Framework</a>
+      <!-- <a href="#team" class="nav-link">Team</a> -->
+      <a href="#usecase" class="nav-link">Usecase & Stories</a>
+      <!-- <a href="#tools" class="nav-link">Tools</a> -->
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
   </div>
 </header>
 <!-- Navbar End -->
 
 <!-- Hero Section Start -->
-<section class="hero-section">
+<section class="hero-section" id="home">
   <div class="liquid-gradient"></div>
   <div class="hero-content">
     <h1 class="animate-fade-up" id="hero-tittle">Beyond Pixels</h1>
     <p class="animate-slide-in">Transforming Care with Heart and Intelligence</p>
-    <p class="animate-blink">Innovating tomorrow’s care, today.</p>
+    <p class="animate-blink">Innovating tomorrowâ€™s care, today.</p>
     <div class="hero-buttons">
-      <a href="about.html" class="btn btn-primary">Learn More</a>
-      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      <a href="#about" class="btn btn-primary">Learn More</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
   </div>
 </section>
@@ -75,7 +83,7 @@
         <h5>Our Process</h5>
         <h1>Our Three-Phase Approach</h1>
         <p>
-     Running a healthcare facility today means dealing with rising costs, staff pressure, and growing patient expectations. Our agency helps hospitals and clinics plug in practical AI solutions that streamline workflows, cut avoidable costs, and support better patient outcomes—without disrupting day-to-day care.
+     Running a healthcare facility today means dealing with rising costs, staff pressure, and growing patient expectations. Our agency helps hospitals and clinics plug in practical AI solutions that streamline workflows, cut avoidable costs, and support better patient outcomesâ€”without disrupting day-to-day care.
         </p>
         <a href="#" class="btn-learn">Learn More</a>
       </div>
@@ -122,7 +130,7 @@
   <!-- why choose Section Start -->
 <section class="why-us">
   <div class="why-header">
-    <h5>✨ Why Choose Us</h5>
+    <h5>Why Choose Us</h5>
   </div>
 
   <div class="why-grid">
@@ -144,13 +152,141 @@
     <div class="why-card">
       <h4>Customization</h4>
       <p>
-     We don’t force one-size-fits-all. Whether you’re a single hospital or a multi-site network, we tailor AI solutions to your specialty, existing systems, and budget—so they actually get used and deliver results.
+     We donâ€™t force one-size-fits-all. Whether youâ€™re a single hospital or a multi-site network, we tailor AI solutions to your specialty, existing systems, and budgetâ€”so they actually get used and deliver results.
 
       </p>
     </div>
   </div>
 </section>
 <!-- why choose Section Ends -->
+
+<!-- About Section Start -->
+<section class="section-approach" id="about">
+  <div class="approach-container">
+    <div class="approach-grid">
+      <!-- Left Images -->
+      <div class="approach-images">
+        <div class="image-stack">
+          <img src="img/healthcare-1.jpg" alt="Healthcare Image 1" class="img-main" />
+          <div class="img-overlay">
+            <img src="img/healthcare-2.jpg" alt="Healthcare Image 2" class="img-small" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Text -->
+      <div class="approach-text">
+     <h5>About Us</h5>
+      <h1>
+        <span class="highlight">Beyond Pixel</span> â€” your trusted, expert partner for AI
+        transformation in healthcare.
+      </h1>
+      <p>
+        We empower hospitals, clinics, and diagnostic networks to harness artificial intelligence
+        for smarter, faster, and more efficient care. Our mission: simplify AI adoption while
+        ensuring security, scalability, and patient-centric innovation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="image-grid">
+  <div class="img1">1</div>
+  <div class="img2">2</div>
+  <div class="img3">3</div>
+  <div class="img4">4</div>
+  <div class="img5">5</div>
+  <div class="img6">6</div>
+</div>
+
+<section class="founder-section">
+  <article class="founder-card" aria-labelledby="founder-name">
+    <div class="founder-avatar" aria-hidden="true">
+      <img src="./img/healthcare-2.jpg" alt="">
+    </div>
+
+    <div class="founder-body">
+      <h3 id="founder-name" class="founder-name">Arpit Upadhyay â€” Founder</h3>
+      <p class="founder-role">Healthcare AI & Cardiac Technology Specialist
+</p>
+
+      <ul class="founder-list">
+        <li>
+          <strong>For the last 17+ years</strong>, Arpit has lived inside hospitals, cath labs, and diagnostics networks across India and Africaâ€”working with cardiologists, administrators, and government programs to fix very real problems, not just deploy software.
+        </li>
+        <li>
+          He has led implementations in <strong>cardiac screening, teleâ€‘cardiology, and AI-enabled diagnostics, giving him a frontâ€‘row view of long queues, burnout, leakages, and missed diagnoses.</strong>  That experience is what shapes Beyond Pixel: every solution is designed to work in the chaos of real healthcare, with your clinicians and operations at the center.
+
+        </li>
+      </ul>
+
+      <div class="key-takeaway" role="note">
+        <div class="takeaway-bullet">ðŸ‘‰</div>
+        <p class="takeaway-text">
+          <strong>Key takeaway:</strong> The founder's deep, practical healthcare experience gives Beyond Pixels real-world credibility â€” they understand hospitals' actual challenges, not just technology.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+<!-- About Section End -->
+
+<!-- Framework Section Start -->
+<section class="framework-section py-5" id="framework">
+  <div class="container">
+    <div class="section-header text-center">
+      <h5 class="accent-text">Our Services</h5>
+      <h1>Three-Phase Integration Framework</h1>
+    </div>
+
+    <div class="framework-grid">
+      <!-- Phase 1 -->
+      <div class="framework-card">
+        <img src="./img/service-1.jpg" alt="AI Consultation" class="framework-img" />
+        <h4>Phase 1: AI Consultation</h4>
+        <div>
+          <p><strong>Understand Before We Build</strong></p>
+
+          <p> We sit with your leadership and key departments to understand your biggest painsâ€”delays, leakages, bottlenecksâ€”and how you work today. From this, you get a short, clear AI roadmap showing where to start (diagnostics, ops, or patient experience) and what impact to expect.
+.</p>
+          </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="framework-card">
+        <img src="./img/service-2.jpg" alt="AI Audit" class="framework-img" />
+        <h4>Phase 2: AI Audit</h4>
+        <div>
+          <p><strong>X-Ray of Your Systems</strong></p>
+          <p>We review your data, software, and workflows like a clinical investigation: what's working, what's broken, and what's risky for compliance. You get a practical audit report with 3â€“5 priority use cases, effort vs. impact, and a safe path to proceed.
+</p>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="framework-card">
+        <img src="./img/service-3.jpg" alt="AI Solution Development" class="framework-img" />
+        <h4>Phase 3: AI Solution Development</h4>
+        <div>
+          <p><strong>From Idea to Live Workflow</strong></p>
+          <p>We then design and build the actual solutionâ€”be it triage, automation, dashboards, or decision supportâ€”integrated into your existing systems. We train your team, go live in pilots, and keep tuning until it works smoothly in your realâ€‘world setting.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Framework Section End -->
+
+<!-- Usecase Section Start -->
+<section class="hero-section" id="usecase" style="min-height: 50vh; margin-top: 0;">
+  <div class="liquid-gradient"></div>
+  <div class="hero-content">
+    <h1 class="animate-fade-up">Use Cases and Success Stories</h1>
+    <p class="animate-slide-in" style="font-size: 1.5rem; margin-top: 2rem;">Coming Soon</p>
+  </div>
+</section>
+<!-- Usecase Section End -->
 
 <!-- Trusted By Section Start -->
 <div class="container" role="main">
@@ -245,7 +381,7 @@
   </div>
 <!-- Trusted By Section End -->
 <!-- Contact section Start -->
-<section class="contact-section">
+<section class="contact-section" id="contact">
   <div class="contact-header">
     <h5>Get In Touch</h5>
     <h1>Contact for any query</h1>
@@ -324,13 +460,13 @@
     <div class="footer-col">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./framework.html">Framework</a></li>
-        <!-- <li><a href="./team.html">Team</a></li> -->
-        <li><a href="./usecase.html">Usecase & Success Stories</a></li>
-        <!-- <li><a href="./Tools.html">Tools & Technologies</a></li> -->
-        <!-- <li><a href="./contact.html">Contact Us</a></li> -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#framework">Framework</a></li>
+        <!-- <li><a href="#team">Team</a></li> -->
+        <li><a href="#usecase">Usecase & Success Stories</a></li>
+        <!-- <li><a href="#tools">Tools & Technologies</a></li> -->
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
 
@@ -360,7 +496,7 @@
   <hr class="footer-divider" />
 
   <div class="footer-bottom">
-    <p>© <span class="brand">Beyond Pixels</span> — All rights reserved.</p>
+    <p>Â© <span class="brand">Beyond Pixels</span> â€” All rights reserved.</p>
   </div>
 </footer>
 <!-- Footer End -->
