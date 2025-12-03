@@ -489,7 +489,7 @@ a:hover {
 }
 
 .hero-content h1 {
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(3.5rem, 9vw, 6rem);
   font-weight: 300;
   color: var(--white);
   margin-bottom: var(--spacing-lg);
@@ -1092,7 +1092,7 @@ a:hover {
 }
 
 .approach-text h5 {
-  font-size: 0.875rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--primary-blue);
   text-transform: uppercase;
@@ -1114,7 +1114,7 @@ a:hover {
 }
 
 .approach-text h1 {
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(2rem, 4vw, 2rem);
   font-weight: 500;
   color: var(--black-87);
   line-height: 1.2;
