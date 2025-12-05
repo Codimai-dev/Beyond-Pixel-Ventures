@@ -621,6 +621,7 @@
   background: linear-gradient(135deg, #fafafa 0%, #ffffff 50%, #f5f5f5 100%);
   position: relative;
   overflow: hidden;
+    margin-top: 100px;
 }
 
 .contact-section::before {
@@ -677,9 +678,11 @@
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: var(--spacing-2xl);
+  /* display: grid;
+  grid-template-columns: 1fr 1.5fr; */
+  /* gap: var(--spacing-2xl); */
+  display: flex;
+  justify-content: center;
   align-items: start;
 }
 .contact-container iframe{
@@ -688,12 +691,16 @@
 }
 /* Contact Info Cards */
 .contact-info {
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: var(--spacing-lg);
 }
 
 .contact-card {
+  width: 100%;
+  max-width: 500px;
   background-color: var(--white);
   padding: var(--spacing-lg);
   border-radius: var(--radius-md);

@@ -2,6 +2,9 @@
    FOUNDER SECTION STYLES
    =================================== */
 
+   #about{
+    padding-top: 100px;
+   }
 .founder-section {
   padding: var(--spacing-3xl) var(--spacing-lg);
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
