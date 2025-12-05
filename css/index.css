@@ -682,7 +682,10 @@
   gap: var(--spacing-2xl);
   align-items: start;
 }
-
+.contact-container iframe{
+  border: 2px solid #000;
+  border-radius: 20px ;
+}
 /* Contact Info Cards */
 .contact-info {
   display: flex;
