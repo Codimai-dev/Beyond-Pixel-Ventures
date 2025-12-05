@@ -313,6 +313,19 @@ a:hover {
   display: block;
 }
 
+.navbar-brand-text {
+  margin-left: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black-87);
+  letter-spacing: 0.5px;
+  transition: color var(--transition-fast);
+}
+
+.navbar-logo:hover .navbar-brand-text {
+  color: var(--primary-blue);
+}
+
 /* Menu Toggle Button */
 .menu-toggle {
   display: none;
@@ -752,8 +765,8 @@ a:hover {
 
 /* Footer Logo */
 .footer-logo {
-  height: 60px;
-  width: auto;
+  height: 40px;
+  width: 40px;
   margin-bottom: var(--spacing-md);
   filter: drop-shadow(0 2px 8px rgba(33, 150, 243, 0.3));
   transition: transform var(--transition-fast);
@@ -1119,6 +1132,7 @@ a:hover {
   color: var(--black-87);
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
 }
 
 .approach-text p {
