@@ -309,7 +309,11 @@
 
 /* Grid Item Base Styles */
 .image-grid > div {
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue-light));
+  /* background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue-light));
+   */
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-2);
   overflow: hidden;
@@ -350,6 +354,9 @@
   transform: translateY(-8px) scale(1.02);
   border-color: var(--white);
 }
+.image-grid img{
+  background-size: cover;
+}
 
 /* Individual Grid Positions - Masonry Style */
 .img1 {
@@ -361,7 +368,9 @@
 .img2 {
   grid-column: 3 / 5;
   grid-row: 1 / 2;
-  background: linear-gradient(135deg, #03A9F4, #0288D1);
+  /* background: linear-gradient(135deg, #03A9F4, #0288D1);
+   */
+   background-position: center !important;
 }
 
 .img3 {
@@ -386,6 +395,8 @@
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   background: linear-gradient(135deg, #64B5F6, #2196F3);
+  background-position:center !important;
+  background-size: cover  !important;
 }
 
 /* For actual images - uncomment and adjust when ready */
@@ -459,6 +470,7 @@
   .img6 {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
+    background-position: bottom !important;
   }
 
   .image-grid > div {
@@ -482,6 +494,7 @@
   .img2 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background-size: cover;
   }
 
   .img3 {
@@ -502,6 +515,7 @@
   .img6 {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    background-position: top !important;
   }
 
   .image-grid > div {
