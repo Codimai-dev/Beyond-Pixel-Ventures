@@ -471,6 +471,7 @@
     grid-column: 1 / 4;
     grid-row: 4 / 5;
     background-position: bottom !important;
+    /* visibility: hidden; */
   }
 
   .image-grid > div {

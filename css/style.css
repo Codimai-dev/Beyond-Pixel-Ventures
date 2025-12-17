@@ -1184,6 +1184,7 @@ a:hover {
 
 .btn-learn:hover {
   background-color: var(--primary-blue-dark);
+  color: white;
   box-shadow: var(--shadow-3);
   transform: translateY(-2px);
 }
